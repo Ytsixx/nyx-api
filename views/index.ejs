@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link href="/css/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-white text-black h-screen overflow-hidden"
+style="
+  background-image: url('/images/logo1.png');
+  background-size: 130%;
+  background-position: center 0%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+">
+  
+  <!-- CAIXA FIXADA -->
+  <div class="
+    border-2          
+    border-black      
+    bg-white          
+    w-max
+    p-6
+    
+    fixed
+    bottom-[5%]
+    left-2
+    
+    z-50
+    
+    flex
+    flex-col
+    gap-3
+  ">
+    <!-- Título com efeito Typing -->
+    <h1 class="
+      animate-typing 
+      overflow-hidden 
+      whitespace-nowrap 
+      border-r-4 
+      border-r-black 
+      pr-5 
+      text-2xl 
+      text-black 
+      font-bold
+      font-saira
+      select-none
+    ">
+      Sign In / Sign Up
+    </h1>
+    
+    <!-- Botão GitHub -->
+    <button 
+      onclick="window.location.href='/auth/github'"
+      class="
+        w-full
+        px-4 py-2
+        border-2 border-black
+        bg-white
+        hover:bg-gray-100
+        active:bg-gray-200
+        active:scale-95
+        transition-all
+        duration-150
+        font-saira font-medium
+        flex items-center justify-center gap-2
+        cursor-pointer
+      ">
+      <i class="fa-brands fa-github"></i>
+      GitHub
+    </button>
+    
+    <!-- Botão Sign In -->
+    <button 
+      onclick="window.location.href='/signin'"
+      class="
+        w-full
+        px-4 py-2
+        border-2 border-black
+        bg-black
+        text-white
+        hover:bg-gray-800
+        active:bg-gray-900
+        active:scale-95
+        transition-all
+        duration-150
+        font-saira font-medium
+        cursor-pointer
+      ">
+      Sign In
+    </button>
+    
+    <!-- Botão Sign Up -->
+    <button 
+      onclick="window.location.href='/signup'"
+      class="
+        w-full
+        px-4 py-2
+        border-2 border-black
+        bg-white
+        hover:bg-gray-100
+        active:bg-gray-200
+        active:scale-95
+        transition-all
+        duration-150
+        font-saira font-medium
+        cursor-pointer
+      ">
+      Sign Up
+    </button>
+  </div>
+  
+</body>
+</html>

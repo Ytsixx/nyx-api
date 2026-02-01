@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link href="/css/output.css" rel="stylesheet">
+</head>
+<body class=" h-screen flex items-center justify-center overflow-hidden"
+style="
+  background-image: url('/images/logo2.png');
+  background-size: 100%;
+  background-position: center 0%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+">
+
+  <!-- FORMULÁRIO SIGN IN -->
+  <div class="p-8 shadow-2xl w-full max-w-md">
+    
+    <!-- Título -->
+    <h1 class="
+      text-3xl 
+      font-bold 
+      mb-8 
+      text-center 
+      text-black
+      font-saira
+    ">
+      Sign In
+    </h1>
+
+    <!-- Formulário -->
+    <form action="/signin" method="POST" class="space-y-5">
+      
+      <!-- Campo Username -->
+      <div>
+        <label for="username" class="block text-sm font-medium text-black mb-2 font-saira">
+          @Username
+        </label>
+        <input 
+          type="text" 
+          id="username"
+          name="username" 
+          placeholder="@username" 
+          class="
+            w-full 
+            p-3 
+            focus:outline-none 
+            focus:ring-2 
+            focus:ring-black
+            font-saira
+          "
+          required
+        />
+      </div>
+
+      <!-- Campo Password -->
+      <div>
+        <label for="password" class="block text-sm font-medium text-black mb-2 font-saira">
+          Password
+        </label>
+        <input 
+          type="password" 
+          id="password"
+          name="password" 
+          placeholder="••••••••" 
+          class="
+            w-full 
+            p-3 
+            focus:outline-none 
+            focus:ring-2 
+            focus:ring-black
+            font-saira
+          "
+          required
+        />
+      </div>
+
+      <!-- Link Recuperar Senha -->
+      <div class="text-right">
+        <a 
+          href="/forgot-password" 
+          class="
+            text-sm 
+            text-black 
+            hover:underline
+            font-saira
+            font-medium
+          "
+        >
+          Forgot password?
+        </a>
+      </div>
+
+      <!-- Botão Sign In -->
+      <button 
+        type="submit" 
+        class="
+          w-full 
+          bg-black 
+          hover:bg-gray-800 
+          active:bg-gray-900
+          active:scale-95
+          text-white 
+          font-bold 
+          py-3 
+          
+          
+          transition-all 
+          duration-150
+          font-saira
+          cursor-pointer
+        "
+      >
+        Sign In
+      </button>
+
+      <!-- Botão Sign Up -->
+      <button 
+        type="button"
+        onclick="window.location.href='/signup'"
+        class="
+          w-full 
+           
+          hover:bg-gray-100 
+          active:bg-gray-200
+          active:scale-95
+          text-black 
+          font-bold 
+          py-3 
+          
+          
+          transition-all 
+          duration-150
+          font-saira
+          cursor-pointer
+        "
+      >
+        Sign Up
+      </button>
+    </form>
+
+  </div>
+
+</body>
+</html>
