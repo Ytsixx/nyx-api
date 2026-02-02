@@ -1,6 +1,9 @@
 import 'dotenv/config'
 import express from 'express'
 import mongoose from 'mongoose'
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log('🟢 MongoDB conectado'))
+  .catch(err => console.error('🔴 Erro MongoDB:', err))
 
 import signupRoutes from './routes/signup.js'
 import signinRoutes from './routes/signin.js'
